@@ -2,9 +2,35 @@
 <html>
 	<head>
 		<title>Adaptive Site</title>
-			<link rel="stylesheet" type="text/css" href="css/mobile.css">
+			<link id="adaptiveCSS" rel="stylesheet" type="text/css" href="css/mobile.css">
+			
+			<script type="text/javascript">
+				function resize()
+				{
+						/*desktop screen (more than 1024 px)*/
+						if(window.innerWidth > 1024)
+						{
+									document.getElementById("adaptiveCSS").href = "css/desktop.css";
+						}
+						
+						/*tablet screen (from 481 to 1024px)*/
+						else if(window.innerWidth > 480)
+						{
+									document.getElementById("adaptiveCSS").href = "css/tablet.css";
+						}
+						
+						/*mobile screen(up to 480 px)*/
+						else
+						{
+									document.getElementById("adaptiveCSS").href = "css/mobile.css";
+						}					
+													
+				}
+				
+			</script>
 	</head>
 	<body>
+	<body onResize="resize()">
 		<div id="mainGrid">
 			<div id="grid1" class="contentGrid">				
 				<p>Grid One</p>
