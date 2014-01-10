@@ -1,0 +1,39 @@
+/* this file defines the CSS for the mobile version.*/
+
+#mainGrid
+{
+		text-align: 	center;
+		height: 		100%;
+		width: 			100%;	
+}
+
+div.contentGrid
+{
+		float: 			none;
+		height:			25%;
+		width:			100%;
+}
+
+#grid1
+
+{
+		background-color:	#006633;
+}
+
+#grid2
+
+{
+		background-color:	#003399;
+}
+
+#grid3
+
+{
+		background-color:	#990033;
+}
+
+#grid4
+
+{
+		background-color:	#ffff33;
+}
